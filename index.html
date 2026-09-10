@@ -42,13 +42,13 @@
 <main>
 
   <h1>سياسة الخصوصية</h1>
-  <p class="sub">تطبيق «ماما» — متابعة الحمل والتطعيمات · آخر تحديث: ٨ سبتمبر ٢٠٢٦</p>
+  <p class="sub">تطبيق «ماما» — متابعة الحمل والتطعيمات · آخر تحديث: ١٠ سبتمبر ٢٠٢٦</p>
 
   <div class="card">
     <p class="lead" style="margin:0">
       تطبيق «ماما» لا يطلب حسابًا، ولا يرسل ما تُدخلينه إلى أي مكان. كل ما
       تكتبينه يبقى على هاتفك وحده. التطبيق يعرض إعلان بانر من Google AdMob —
-      وهو الشيء الوحيد الذي يرى معلومة عن جهازك، ولا يرى شيئًا مما كتبتِه.
+      وهو الشيء الوحيد الذي يجمع بيانات عن جهازك، ولا يرى شيئًا مما كتبتِه.
     </p>
   </div>
 
@@ -110,7 +110,8 @@
   <p>
     في <strong>الإعدادات ← حذف بياناتي</strong> يُمسح كل ما أدخلتِه من الهاتف
     نهائيًا. كذلك يؤدي حذف التطبيق إلى إزالة كل بياناته. لا توجد نسخة لدينا
-    لنحذفها، ولا حاجة لمراسلتنا لطلب الحذف.
+    لنحذفها، ولا حاجة لمراسلتنا لطلب الحذف. أما ما تجمعه Google عبر الإعلانات
+    فلا نملك نسخة منه؛ ويمكنك إعادة ضبط معرّف الإعلانات أو حذفه من إعدادات الهاتف.
   </p>
 
   <h2>الإعلانات</h2>
@@ -119,10 +120,21 @@
     تملأ الشاشة، ولا إعلانات تظهر بين خطوة وأخرى، ولا فيديو إجباري.
   </p>
   <p>
-    الإعلانات تأتي من <strong>Google AdMob</strong>. AdMob شريك مستقل، وقد
-    يستخدم <strong>معرّف الإعلانات</strong> الخاص بجهازك ومعلومات تقنية عامة
-    (نوع الجهاز، نظام التشغيل، عنوان IP التقريبي) لاختيار الإعلان وقياس أدائه.
-    هذه المعلومات تذهب إلى Google لا إلينا، وتحكمها
+    الإعلانات تأتي من <strong>Google AdMob</strong>، وهو شريك مستقل. حزمة AdMob
+    داخل التطبيق تجمع تلقائيًا ما يلي وتشاركه مع Google:
+  </p>
+  <ul>
+    <li><strong>معرّفات الجهاز:</strong> معرّف الإعلانات، ومعرّف مجموعة التطبيقات.</li>
+    <li><strong>الموقع التقريبي</strong> المستنتج من عنوان IP — لا الموقع الدقيق،
+      والتطبيق لا يطلب إذن الموقع أصلًا.</li>
+    <li><strong>التفاعل مع التطبيق:</strong> مثل فتح التطبيق، والنقر على الإعلانات،
+      ومشاهدة الفيديو.</li>
+    <li><strong>بيانات تشخيصية:</strong> مثل زمن التشغيل، وحالات توقّف التطبيق عن
+      الاستجابة، واستهلاك البطارية.</li>
+  </ul>
+  <p>
+    تُستخدم هذه البيانات <strong>للإعلانات، والتحليلات، ومنع الاحتيال</strong>،
+    وتُرسل مشفّرة، وتذهب إلى Google لا إلينا، وتحكمها
     <a href="https://policies.google.com/technologies/partner-sites">سياسة Google</a>.
   </p>
   <p>
@@ -160,12 +172,12 @@
   <!-- ================= English ================= -->
   <section class="en" lang="en">
     <h1>Privacy Policy</h1>
-    <p class="sub">Mama — Pregnancy &amp; Vaccination Tracker · Last updated: 8 September 2026</p>
+    <p class="sub">Mama — Pregnancy &amp; Vaccination Tracker · Last updated: 10 September 2026</p>
 
     <p class="lead">
       Mama requires no account and sends nothing you enter anywhere. Everything you
       type stays on your own phone. The app shows a banner ad from Google AdMob —
-      the only thing that sees anything about your device, and it sees nothing
+      the only thing that collects data about your device, and it sees nothing
       you have written.
     </p>
 
@@ -211,7 +223,9 @@
     <p>
       <strong>Settings → Delete my data</strong> erases everything from the phone.
       Uninstalling the app also removes all of its data. We hold no copy, so there
-      is nothing to request from us.
+      is nothing to request from us. Data Google collects through ads is held by
+      Google, not by us; you can reset or delete your advertising ID in your phone
+      settings.
     </p>
 
     <h2>Advertising</h2>
@@ -220,11 +234,22 @@
       There are no full-screen ads, no ads between steps, and no forced video.
     </p>
     <p>
-      Ads are served by <strong>Google AdMob</strong>. AdMob is an independent
-      partner and may use your device's <strong>advertising ID</strong> and
-      general technical information (device type, OS, approximate IP address) to
-      select and measure ads. That information goes to Google, not to us, and is
-      governed by
+      Ads are served by <strong>Google AdMob</strong>, an independent partner.
+      The AdMob SDK inside the app automatically collects the following and
+      shares it with Google:
+    </p>
+    <ul>
+      <li><strong>Device identifiers:</strong> the advertising ID and the app set ID.</li>
+      <li><strong>Approximate location</strong> inferred from the IP address — never
+        precise location; the app does not request the location permission.</li>
+      <li><strong>App interactions:</strong> such as app launches, ad taps and video
+        views.</li>
+      <li><strong>Diagnostics:</strong> such as launch time, unresponsiveness and
+        battery use.</li>
+    </ul>
+    <p>
+      It is used for <strong>advertising, analytics and fraud prevention</strong>,
+      is encrypted in transit, goes to Google rather than to us, and is governed by
       <a href="https://policies.google.com/technologies/partner-sites">Google's policy</a>.
     </p>
     <p>
