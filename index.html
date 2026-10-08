@@ -42,13 +42,15 @@
 <main>
 
   <h1>سياسة الخصوصية</h1>
-  <p class="sub">تطبيق «ماما» — متابعة الحمل والتطعيمات · آخر تحديث: ٢٣ سبتمبر ٢٠٢٦</p>
+  <p class="sub">تطبيق «ماما» — متابعة الحمل والتطعيمات · آخر تحديث: ٨ أكتوبر ٢٠٢٦</p>
 
   <div class="card">
     <p class="lead" style="margin:0">
       تطبيق «ماما» لا يطلب حسابًا، ولا يرسل ما تُدخلينه إلى أي مكان. كل ما
       تكتبينه يبقى على هاتفك وحده. التطبيق بلا إعلانات، ويمنحك تجربة مجانية
       لمدة ٣٠ يومًا، ثم يتطلب شراءً واحدًا عبر Google Play للاستمرار.
+      على أندرويد يستخدم أداة من Meta لقياس إعلاناتنا عن التطبيق فقط — انظري
+      «قياس الإعلانات» أدناه، ويمكنك إيقافها.
     </p>
   </div>
 
@@ -79,8 +81,8 @@
 
   <h2>هل يتصل التطبيق بالإنترنت؟</h2>
   <p>
-    التطبيق يعمل كاملًا بدون إنترنت. الاتصال الوحيد الذي يقوم به هو
-    <strong>تنزيل تحديثات المحتوى</strong> (محتوى الأسابيع وجدول التطعيمات)
+    التطبيق يعمل كاملًا بدون إنترنت. يتصل التطبيق لـ<strong>تنزيل تحديثات
+    المحتوى</strong> (محتوى الأسابيع وجدول التطعيمات)
     من ملف عام على <code>raw.githubusercontent.com</code> و
     <code>cdn.jsdelivr.net</code>، بحد أقصى مرة كل ست ساعات.
   </p>
@@ -100,11 +102,34 @@
     ثلاث مرات). النافذة يقدّمها المتجر نفسه، ولا يعرف التطبيق إن قيّمتِ أو ماذا كتبتِ.
   </p>
 
+  <h2>قياس الإعلانات (Meta)</h2>
+  <p>
+    نعلن عن «ماما» على فيسبوك وإنستجرام. لنعرف أي إعلان جاء بمن ثبّتت التطبيق،
+    يحتوي التطبيق على أندرويد على <strong>Meta SDK</strong> (شركة Meta Platforms).
+    هذه الأداة تُبلغ Meta تلقائيًا بأن التطبيق <strong>ثُبِّت</strong> أو
+    <strong>فُتح</strong>، وبعملية <strong>شراء «ماما الكامل»</strong> إن تمّت، ومعها
+    معلومات عن الجهاز (مثل الطراز ونظام التشغيل)، وعنوان IP، و<strong>معرّف
+    الإعلانات</strong> الخاص بجهازك.
+  </p>
+  <p>
+    <strong>لا يُرسل إلى Meta أي شيء عن الحمل أو الطفل</strong>: لا التواريخ، ولا
+    التطعيمات، ولا القياسات، ولا اليوميات، ولا الأسماء. التطبيق لا يرسل أي حدث
+    من عنده، ولا يربط ما يُرسل بهويتك.
+  </p>
+  <p>
+    يمكنك إيقاف ذلك في أي وقت من <strong>الإعدادات ← قياس الإعلانات</strong>، ويمكنك
+    كذلك إعادة ضبط معرّف الإعلانات أو حذفه من إعدادات Google في هاتفك. تتعامل Meta
+    مع هذه البيانات وفق
+    <a href="https://www.facebook.com/privacy/policy/">سياسة الخصوصية الخاصة بها</a>.
+    على آيفون لا تعمل هذه الأداة حاليًا.
+  </p>
+
   <h2>الأذونات</h2>
   <table>
     <tr><th>الإذن</th><th>لماذا</th></tr>
     <tr><td>الإشعارات</td><td>تذكير بموعد التطعيم والمتابعة. اختياري تمامًا، ويمكن إيقافه في أي وقت.</td></tr>
     <tr><td>التشغيل بعد إعادة تشغيل الهاتف</td><td>إعادة ضبط التذكيرات المجدولة، لأن نظام أندرويد يلغيها عند إعادة التشغيل.</td></tr>
+    <tr><td>معرّف الإعلانات، وقياس الإعلانات في أندرويد (Attribution)</td><td>قياس إعلاناتنا عن التطبيق عبر Meta (انظري «قياس الإعلانات»). يمكن إيقافه من الإعدادات. التطبيق <strong>لا يطلب</strong> واجهتَي «الاهتمامات» (Topics) و«الجماهير المخصّصة» في أندرويد.</td></tr>
   </table>
   <p>
     التطبيق <strong>لا يطلب</strong> الكاميرا، ولا الموقع الجغرافي، ولا جهات
@@ -177,12 +202,14 @@
   <!-- ================= English ================= -->
   <section class="en" lang="en">
     <h1>Privacy Policy</h1>
-    <p class="sub">Mama — Pregnancy &amp; Vaccination Tracker · Last updated: 23 September 2026</p>
+    <p class="sub">Mama — Pregnancy &amp; Vaccination Tracker · Last updated: 8 October 2026</p>
 
     <p class="lead">
       Mama requires no account and sends nothing you enter anywhere. Everything you
       type stays on your own phone. The app contains no ads. It includes a
       30-day free trial, followed by a one-time Google Play purchase to continue.
+      On Android it uses a Meta tool only to measure our own ads for the app —
+      see "Ad measurement" below; you can switch it off.
     </p>
 
     <h2>What the app stores</h2>
@@ -208,7 +235,7 @@
 
     <h2>Network use</h2>
     <p>
-      The app works fully offline. Its only network request downloads content
+      The app works fully offline. It connects to download content
       updates (week-by-week content and the vaccination schedule) from a public
       file on <code>raw.githubusercontent.com</code> and <code>cdn.jsdelivr.net</code>,
       at most once every six hours. That request carries nothing about you.
@@ -226,10 +253,34 @@
       learn whether or what you rated.
     </p>
 
+    <h2>Ad measurement (Meta)</h2>
+    <p>
+      We advertise Mama on Facebook and Instagram. To learn which ad led to an
+      install, the Android app includes the <strong>Meta SDK</strong> (Meta
+      Platforms). It automatically tells Meta that the app was
+      <strong>installed</strong> or <strong>opened</strong>, and about the
+      <strong>"Mama Full" purchase</strong> if one happens, together with device
+      information (such as model and OS version), your IP address and your
+      device's <strong>advertising ID</strong>.
+    </p>
+    <p>
+      <strong>Nothing about a pregnancy or a child is sent to Meta</strong>: no
+      dates, vaccinations, measurements, daily log or names. The app logs no
+      events of its own and does not link what is sent to your identity.
+    </p>
+    <p>
+      You can switch this off at any time in <strong>Settings → قياس الإعلانات
+      (Ad measurement)</strong>, and you can reset or delete your advertising ID
+      in your phone's Google settings. Meta handles this data under
+      <a href="https://www.facebook.com/privacy/policy/">its own privacy policy</a>.
+      This tool is not active on iPhone at present.
+    </p>
+
     <h2>Permissions</h2>
     <ul>
       <li><strong>Notifications</strong> — vaccination and appointment reminders. Entirely optional.</li>
       <li><strong>Receive boot completed</strong> — to re-register scheduled reminders after a restart, since Android clears them.</li>
+      <li><strong>Advertising ID and Android ad attribution</strong> — to measure our own ads for the app through Meta (see "Ad measurement"); can be switched off in settings. The app does <strong>not</strong> request Android's Topics or Custom Audience APIs.</li>
     </ul>
     <p>No camera, location, contacts, broad photo/file access or microphone permission is requested. When restoring, you explicitly choose the backup file through the system file picker.</p>
 
