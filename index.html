@@ -42,13 +42,14 @@
 <main>
 
   <h1>سياسة الخصوصية</h1>
-  <p class="sub">تطبيق «ماما» — متابعة الحمل والتطعيمات · آخر تحديث: ١٦ أكتوبر ٢٠٢٦</p>
+  <p class="sub">تطبيق «ماما» — متابعة الحمل والتطعيمات · آخر تحديث: ٢٥ أكتوبر ٢٠٢٦</p>
 
   <div class="card">
     <p class="lead" style="margin:0">
       تطبيق «ماما» لا يطلب حسابًا، ولا يرسل ما تُدخلينه إلى أي مكان. كل ما
-      تكتبينه يبقى على هاتفك وحده. التطبيق بلا إعلانات، ويمنحك تجربة مجانية
-      لمدة ٣٠ يومًا، ثم يتطلب شراءً واحدًا عبر Google Play للاستمرار.
+      تكتبينه يبقى على هاتفك وحده، عدا ما تسألينه لـ«مستشارك الخاص» إن استخدمتِه
+      (انظري أدناه). التطبيق بلا إعلانات، ويمنحك تجربة مجانية
+      لمدة ٣٠ يومًا، ثم يتطلب شراءً واحدًا عبر Google Play أو App Store للاستمرار.
       يستخدم أداة من Meta لقياس إعلاناتنا عن التطبيق فقط — انظري
       «قياس الإعلانات» أدناه، ويمكنك إيقافها.
     </p>
@@ -71,7 +72,8 @@
   </ul>
   <p>
     هذه البيانات <strong>لا تغادر الهاتف</strong>. لا نراها، ولا يوجد لدينا خادم
-    تُخزَّن عليه، ولا حساب يمكن اختراقه.
+    تُخزَّن عليه، ولا حساب يمكن اختراقه. الاستثناء الوحيد أسئلتك لـ«مستشارك الخاص»،
+    وهي لا تُحفظ لدينا أيضًا (انظري القسم الخاص به).
   </p>
   <p>
     إذا أضفتِ <strong>أداة «ماما» إلى الشاشة الرئيسية</strong> في أندرويد، فهي تعرض
@@ -107,6 +109,28 @@
     وقد يعرض التطبيق أحيانًا <strong>نافذة التقييم الخاصة بالمتجر</strong> (بحد أقصى
     ثلاث مرات). النافذة يقدّمها المتجر نفسه، ولا يعرف التطبيق إن قيّمتِ أو ماذا كتبتِ.
   </p>
+
+  <h2>مستشارك الخاص (ذكاء اصطناعي)</h2>
+  <p>
+    «مستشارك الخاص» يجيب عن أسئلتك عن الحمل والرضاعة والأطفال واستخدام التطبيق، باستخدام
+    نموذج <strong>Claude</strong> من شركة <strong>Anthropic</strong>. استخدامه اختياري، ولا يعمل إلا
+    عندما تكتبين سؤالًا بنفسك. عند كل سؤال:
+  </p>
+  <ul>
+    <li>يُرسل <strong>سؤالك</strong>، وآخر أسئلة وإجابات في المحادثة (حتى ستّ رسائل)، وسطر قصير
+      بحالتك مثل «حامل في الأسبوع ٢٤» أو «طفل عمره ٤ أشهر» — إلى خادمنا، ومنه إلى Anthropic
+      لتوليد الإجابة.</li>
+    <li><strong>لا يُرسل</strong> اسمك ولا اسم طفلك ولا التواريخ ولا التطعيمات ولا القياسات ولا
+      اليوميات ولا أي شيء آخر من التطبيق.</li>
+    <li>خادمنا (على Cloudflare) <strong>لا يحفظ</strong> الأسئلة ولا الإجابات. يحفظ فقط عدد أسئلتك
+      اليوم بجانب معرّف عشوائي أنشأه التطبيق على هاتفك، ويُحذف تلقائيًا بعد يومين.</li>
+    <li>تعالج Anthropic الطلب لتوليد الإجابة وفق
+      <a href="https://www.anthropic.com/legal/privacy">سياسة الخصوصية الخاصة بها</a>، ولا تستخدم
+      بيانات واجهتها البرمجية لتدريب نماذجها.</li>
+    <li>المحادثة نفسها محفوظة <strong>على هاتفك فقط</strong>، ويمكنك مسحها من صفحة المستشار.</li>
+    <li>ننصحك ألا تكتبي في سؤالك اسمًا أو رقم هاتف أو أي معلومة تعرّف بك.</li>
+    <li>المستشار مساعد ذكي <strong>وليس طبيبًا</strong>، وإجاباته معلومات عامة للتوعية.</li>
+  </ul>
 
   <h2>قياس الإعلانات (Meta)</h2>
   <p>
@@ -160,7 +184,8 @@
   <p>
     التطبيق موجّه للأمهات والآباء البالغين. البيانات المتعلقة بالطفل
     (تاريخ الميلاد، التطعيمات، القياسات) يُدخلها ولي الأمر وتبقى على الهاتف
-    ولا تُرسل إلى أي جهة.
+    ولا تُرسل إلى أي جهة. مع أسئلة «مستشارك الخاص» فقط يُرسل عمر الطفل التقريبي
+    (مثل «٤ أشهر») دون اسمه أو تاريخ ميلاده.
   </p>
 
   <h2>النسخة الاحتياطية المحلية</h2>
@@ -215,12 +240,13 @@
   <!-- ================= English ================= -->
   <section class="en" lang="en">
     <h1>Privacy Policy</h1>
-    <p class="sub">Mama — Pregnancy &amp; Vaccination Tracker · Last updated: 16 October 2026</p>
+    <p class="sub">Mama — Pregnancy &amp; Vaccination Tracker · Last updated: 25 October 2026</p>
 
     <p class="lead">
       Mama requires no account and sends nothing you enter anywhere. Everything you
-      type stays on your own phone. The app contains no ads. It includes a
-      30-day free trial, followed by a one-time Google Play purchase to continue.
+      type stays on your own phone, except what you ask the in-app advisor if you
+      use it (see below). The app contains no ads. It includes a
+      30-day free trial, followed by a one-time Google Play or App Store purchase to continue.
       It uses a Meta tool only to measure our own ads for the app —
       see "Ad measurement" below; you can switch it off.
     </p>
@@ -238,7 +264,7 @@
       <li>Preferences: theme, reminders, country</li>
       <li>The free-trial start date and a flag that you bought "Mama Full", if you did</li>
     </ul>
-    <p>This data never leaves the device. We do not see it, and there is no server holding it.</p>
+    <p>This data never leaves the device. We do not see it, and there is no server holding it. The only exception is your questions to the advisor, which we do not store either (see its section).</p>
     <p>
       If you add the Mama <strong>home-screen widget</strong> on Android, it shows
       some of this same data — the pregnancy week, or the next vaccination and the
@@ -272,6 +298,29 @@
       (at most three times). The sheet is provided by the store; the app does not
       learn whether or what you rated.
     </p>
+
+    <h2>Your advisor (AI)</h2>
+    <p>
+      The in-app advisor ("مستشارك الخاص") answers questions about pregnancy,
+      breastfeeding, children and using the app, using <strong>Claude</strong> by
+      <strong>Anthropic</strong>. It is optional and runs only when you type a question. For each question:
+    </p>
+    <ul>
+      <li>Your <strong>question</strong>, up to the last six messages of the conversation, and one short
+        line about your stage (such as "24 weeks pregnant" or "child aged 4 months") are sent to our
+        server and from there to Anthropic to generate the answer.</li>
+      <li><strong>Not sent:</strong> your name, your child's name, dates, vaccinations, measurements,
+        the daily log or anything else from the app.</li>
+      <li>Our server (on Cloudflare) <strong>does not store</strong> questions or answers. It keeps only
+        today's question count next to a random ID the app created on your phone, deleted
+        automatically after two days.</li>
+      <li>Anthropic processes the request to generate the answer under
+        <a href="https://www.anthropic.com/legal/privacy">its own privacy policy</a> and does not use
+        API data to train its models.</li>
+      <li>The conversation itself is stored <strong>on your phone only</strong>; you can clear it from the advisor page.</li>
+      <li>Please don't include names, phone numbers or anything that identifies you in a question.</li>
+      <li>The advisor is an AI assistant, <strong>not a doctor</strong>; its answers are general information.</li>
+    </ul>
 
     <h2>Ad measurement (Meta)</h2>
     <p>
@@ -319,7 +368,8 @@
     <p>
       The app is intended for adult parents. Child-related data (date of birth,
       vaccinations, measurements) is entered by the parent, stays on the device,
-      and is not transmitted.
+      and is not transmitted. Only with a question to the advisor is the child's
+      approximate age (such as "4 months") sent, without a name or date of birth.
     </p>
 
     <h2>Local backup</h2>
